@@ -19,7 +19,7 @@ document.addEventListener("click", async function (e) {
 
 // kumpulan function yang di panggil
 function getMovies(keyword) {
-  return fetch("https://www.omdbapi.com/?apikey=dca61bcc&s=" + keyword.value)
+  return fetch("" + keyword.value)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Anauthorized");
